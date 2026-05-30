@@ -18,3 +18,31 @@ typedef struct Node {
 } Node;
 
 Node *head = NULL;
+
+void tambahLinkedList(Pemain p) {
+    Node *baru = (Node*)malloc(sizeof(Node));
+    baru->data = p;
+    baru->next = head;
+    head = baru;
+}
+
+void hapusLinkedList(char nama[]) {
+
+    Node *curr = head;
+    Node *prev = NULL;
+
+    while(curr != NULL) {
+        if(strcmp(curr->data.nama, nama) == 0) {
+
+            if(prev == NULL)
+                head = curr->next;
+            else
+                prev->next = curr->next;
+
+            free(curr);
+            return;
+        }
+
+        prev = curr;
+        curr = curr->next; }
+    }
