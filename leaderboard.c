@@ -46,3 +46,22 @@ void hapusLinkedList(char nama[]) {
         prev = curr;
         curr = curr->next; }
     }
+
+typedef struct BSTNode {
+    Pemain data;
+    struct BSTNode *left;
+    struct BSTNode *right;
+} BSTNode;
+
+BSTNode *root = NULL;
+
+BSTNode* buatNodeBST(Pemain p) {
+
+    BSTNode *baru = (BSTNode*)malloc(sizeof(BSTNode));
+
+    baru->data = p;
+    baru->left = NULL;
+    baru->right = NULL;
+
+    return baru;
+}
