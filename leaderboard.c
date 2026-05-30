@@ -65,3 +65,30 @@ BSTNode* buatNodeBST(Pemain p) {
 
     return baru;
 }
+
+BSTNode* insertBST(BSTNode *root, Pemain p) {
+
+    if(root == NULL)
+        return buatNodeBST(p);
+
+    if(p.skor < root->data.skor)
+        root->left = insertBST(root->left, p);
+    else
+        root->right = insertBST(root->right, p);
+
+    return root;
+}
+
+void inorderBST(BSTNode *root) {
+
+    if(root != NULL) {
+
+        inorderBST(root->right);
+
+        printf("%-20s %5d\n",
+               root->data.nama,
+               root->data.skor);
+
+        inorderBST(root->left);
+    }
+}
