@@ -119,3 +119,16 @@ void bubbleSort(Pemain arr[], int n) {
         }
     }
 }
+
+void insertionSort(Pemain arr[], int n) {
+    for(int i=1;i<n;i++) {
+
+        Pemain key = arr[i];
+        int j = i - 1;
+
+        while(j >= 0 && arr[j].skor < key.skor) {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = key; }
+}
