@@ -92,3 +92,20 @@ void inorderBST(BSTNode *root) {
         inorderBST(root->left);
     }
 }
+
+void bangunUlangBST() {
+
+    root = NULL;
+
+    for(int i=0;i<jumlahPemain;i++) {
+
+        root = insertBST(root, pemain[i]);
+    }
+}
+
+void swap(Pemain *a, Pemain *b) {
+
+    Pemain temp = *a;
+    *a = *b;
+    *b = temp;
+}
