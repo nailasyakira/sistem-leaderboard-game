@@ -214,3 +214,24 @@ void cariPemain() {
 
     printf("Masukkan nama pemain yang dicari : ");
     scanf(" %[^\n]", nama);
+
+for(int i=0;i<jumlahPemain;i++) {
+
+        if(strcmp(pemain[i].nama, nama) == 0) {
+
+            printf("\nData ditemukan!\n");
+            printf("Metode Pencarian : Linear Search\n");
+            printf("------------------------------------\n");
+            printf("Nama : %s\n", pemain[i].nama);
+            printf("Skor : %d\n", pemain[i].skor);
+
+            ditemukan = 1;
+            break;
+        }
+    }
+
+    if(!ditemukan) {
+
+        printf("\nPemain tidak ditemukan!\n");
+    }
+}
