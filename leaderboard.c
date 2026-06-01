@@ -172,3 +172,34 @@ void tambahPemain() {
     printf("Skor : %d\n", p.skor);
     printf("====================================\n");
 }
+
+void tampilLeaderboard() {
+
+    if(jumlahPemain == 0) {
+
+        printf("\nBelum ada data pemain!\n");
+        return;
+    }
+
+    printf("\n");
+    printf("====================================\n");
+    printf("          LEADERBOARD GAME\n");
+    printf("====================================\n");
+
+    printf("%-5s %-20s %-10s\n",
+           "No",
+           "Nama",
+           "Skor");
+
+    printf("------------------------------------\n");
+
+    for(int i=0;i<jumlahPemain;i++) {
+
+        printf("%-5d %-20s %-10d\n",
+               i+1,
+               pemain[i].nama,
+               pemain[i].skor);
+    }
+
+    printf("====================================\n");
+}
