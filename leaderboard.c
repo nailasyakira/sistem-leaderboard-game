@@ -145,3 +145,30 @@ void selectionSort(Pemain arr[], int n) {
         swap(&arr[i], &arr[max]);
     }
 }
+
+void tambahPemain() {
+    
+    if(jumlahPemain >= MAX) {
+        printf("\nData penuh!\n");
+        return;  }
+
+    Pemain p;
+    
+    printf("\nNama pemain : ");
+    scanf(" %[^\n]", p.nama);
+
+    printf("Skor        : ");
+    scanf("%d", &p.skor);
+
+    pemain[jumlahPemain++] = p;
+
+    tambahLinkedList(p);
+
+    root = insertBST(root, p);
+
+    printf("\n====================================\n");
+    printf("Pemain berhasil ditambahkan!\n");
+    printf("Nama : %s\n", p.nama);
+    printf("Skor : %d\n", p.skor);
+    printf("====================================\n");
+}
