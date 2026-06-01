@@ -203,3 +203,14 @@ void tampilLeaderboard() {
 
     printf("====================================\n");
 }
+void cariPemain() {
+
+    char nama[50];
+    int ditemukan = 0;
+
+    printf("\n====================================\n");
+    printf("          CARI PEMAIN\n");
+    printf("====================================\n");
+
+    printf("Masukkan nama pemain yang dicari : ");
+    scanf(" %[^\n]", nama);
