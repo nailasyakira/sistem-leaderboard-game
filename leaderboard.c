@@ -235,3 +235,19 @@ for(int i=0;i<jumlahPemain;i++) {
         printf("\nPemain tidak ditemukan!\n");
     }
 }
+
+void hapusPemain() {
+
+    char nama[50];
+
+    printf("\nNama pemain yang dihapus : ");
+    scanf(" %[^\n]", nama);
+
+    int ditemukan = 0;
+
+    for(int i=0;i<jumlahPemain;i++) {
+
+        if(strcmp(pemain[i].nama, nama) == 0) {
+            
+            for(int j=i;j<jumlahPemain-1;j++)
+            pemain[j] = pemain[j+1];
