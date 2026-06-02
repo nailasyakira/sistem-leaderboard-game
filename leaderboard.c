@@ -270,3 +270,21 @@ jumlahPemain--;
     printf("Pemain tidak ditemukan!\n");
     printf("====================================\n");
 }} 
+void pilihSorting() {
+
+    if(jumlahPemain == 0) {
+
+        printf("\nBelum ada data pemain!\n");
+        return;
+    }
+
+    int pilih;
+
+    printf("\n=== PILIH METODE SORTING ===\n");
+    printf("1. Bubble Sort\n");
+    printf("2. Insertion Sort\n");
+    printf("3. Selection Sort\n");
+    printf("Pilihan : ");
+    scanf("%d", &pilih);
+
+    switch(pilih) {
