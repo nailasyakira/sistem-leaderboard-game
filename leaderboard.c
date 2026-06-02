@@ -251,3 +251,22 @@ void hapusPemain() {
             
             for(int j=i;j<jumlahPemain-1;j++)
             pemain[j] = pemain[j+1];
+
+jumlahPemain--;
+            hapusLinkedList(nama);
+            bangunUlangBST();
+
+            ditemukan = 1;
+            break;
+        }
+    }
+
+    if(ditemukan) {
+    printf("\n====================================\n");
+    printf("Pemain berhasil dihapus!\n");
+    printf("====================================\n");
+} else {
+    printf("\n====================================\n");
+    printf("Pemain tidak ditemukan!\n");
+    printf("====================================\n");
+}} 
