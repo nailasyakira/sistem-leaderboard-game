@@ -288,3 +288,23 @@ void pilihSorting() {
     scanf("%d", &pilih);
 
     switch(pilih) {
+
+case 1:
+             bubbleSort(pemain, jumlahPemain);
+
+             printf("\n====================================\n");
+             printf("      HASIL BUBBLE SORT\n");
+             printf("====================================\n");
+
+            tampilLeaderboard();
+             break;
+
+        case 2:
+             insertionSort(pemain, jumlahPemain);
+
+             printf("\n====================================\n");
+             printf("     HASIL INSERTION SORT\n");
+             printf("====================================\n");
+
+            tampilLeaderboard();
+             break;
