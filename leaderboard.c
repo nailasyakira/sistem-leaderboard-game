@@ -308,3 +308,18 @@ case 1:
 
             tampilLeaderboard();
              break;
+
+        case 3:
+             selectionSort(pemain, jumlahPemain);
+
+            printf("\n====================================\n");
+            printf("     HASIL SELECTION SORT\n");
+            printf("====================================\n");
+
+            tampilLeaderboard();
+            break;
+
+        default:
+            printf("\nPilihan tidak valid!\n");
+    }
+}
