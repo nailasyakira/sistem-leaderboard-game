@@ -323,3 +323,20 @@ case 1:
             printf("\nPilihan tidak valid!\n");
     }
 }
+
+void menu() {
+
+    printf("\n");
+    printf("====================================================\n");
+    printf("            SISTEM LEADERBOARD GAME\n");
+    printf("====================================================\n");
+    printf("[1] Tambah Pemain Baru\n");
+    printf("[2] Tampilkan Leaderboard\n");
+    printf("[3] Pilih Metode Sorting\n");
+    printf("[4] Cari Pemain\n");
+    printf("[5] Hapus Pemain\n");
+    printf("[6] Tampilkan BST Inorder\n");
+    printf("[0] Keluar\n");
+    printf("====================================================\n");
+    printf("Pilih menu : ");
+}
