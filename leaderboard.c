@@ -370,3 +370,27 @@ int main() {
             case 5:
                 hapusPemain();
                 break;
+
+case 6:
+                printf("\n====================================\n");
+                printf("      BST INORDER TRAVERSAL\n");
+                printf("====================================\n");
+
+                if(root == NULL)
+                   printf("Belum ada data pemain!\n");
+                else
+                   inorderBST(root);
+                break;
+
+            case 0:
+                printf("\nTerima kasih.\n");
+                break;
+
+            default:
+                printf("\nMenu tidak tersedia!\n");
+        }
+
+    } while(pilihan != 0);
+
+    return 0;
+}
