@@ -340,3 +340,33 @@ void menu() {
     printf("====================================================\n");
     printf("Pilih menu : ");
 }
+int main() {
+
+    int pilihan;
+
+    do {
+
+        menu();
+        scanf("%d", &pilihan);
+
+        switch(pilihan) {
+
+            case 1:
+                tambahPemain();
+                break;
+
+            case 2:
+                tampilLeaderboard();
+                break;
+
+            case 3:
+                pilihSorting();
+                break;
+
+            case 4:
+                cariPemain();
+                break;
+
+            case 5:
+                hapusPemain();
+                break;
